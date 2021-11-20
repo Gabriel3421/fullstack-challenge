@@ -1,0 +1,23 @@
+.container {
+  height: 100%;
+  padding: 50px;
+  background-color: #eee;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+main {
+  overflow: auto;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 547px) {
+  .container {
+    padding: 15px;
+  }
+}

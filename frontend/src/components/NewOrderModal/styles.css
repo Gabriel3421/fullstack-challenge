@@ -1,0 +1,56 @@
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+@media screen and (max-width: 547px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+}
+form span {
+  width: fit-content;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+form > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.input-grid-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  min-width: 110px;
+}
+
+.label{
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.form-field-edit-validate {
+  color: #FF3030;
+  font-size: 12px;
+  margin-top: 3px;
+}
+.form-field-select-signup{
+  width: 100%;
+  background-color: #fff !important;
+  border-radius: 6px !important;
+}
+
+.form-field-select-signup .ant-select-selector .ant-select-selection-search .ant-select-single{
+  background: #fff;
+}
+.submitButton {
+  align-self: flex-end;
+  margin-top: auto;
+}
