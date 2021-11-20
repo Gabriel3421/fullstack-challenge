@@ -8,6 +8,7 @@ exports.create = async (req, res, next) => {
 		contact,
 		agency,
 		company,
+		description,
 		deadline
 	} = req.body;
 	if (
@@ -15,6 +16,7 @@ exports.create = async (req, res, next) => {
 		!contact ||
 		!agency ||
 		!company ||
+		!description ||
 		!deadline) {
 		const error = new HttpError(
 			'Inválido cadastrar ordem com algum dos campos vazios',
@@ -28,6 +30,7 @@ exports.create = async (req, res, next) => {
 			contact,
 			agency,
 			company,
+			description,
 			deadline
 		});
 		const returnData = {
@@ -36,6 +39,7 @@ exports.create = async (req, res, next) => {
 			contact,
 			agency,
 			company,
+			description,
 			deadline
 		}
 		return res.status(201).send(returnData);
@@ -92,6 +96,7 @@ exports.update = async (req, res, next) => {
 		contact,
 		agency,
 		company,
+		description,
 		deadline
 	} = req.body
 	try {
@@ -100,6 +105,7 @@ exports.update = async (req, res, next) => {
 			contact,
 			agency,
 			company,
+			description,
 			deadline
 		}, { where: { id } });
 		const order = await Orders.findOne({ where: { id } });

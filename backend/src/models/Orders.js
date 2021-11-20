@@ -10,6 +10,7 @@ class Orders extends Model {
         contact: Sequelize.STRING,
         agency: Sequelize.STRING,
         company: Sequelize.STRING,
+        description: Sequelize.STRING,
         deadline: Sequelize.DATE,
       },
       {
