@@ -72,7 +72,7 @@ For each point above, a table would be created in the database to store its attr
 
 ## Built with
 
-* [NodeJS](https://nodejs.org/en/docs/) - Plataforma da aplicação
+* [NodeJS](https://nodejs.org/en/docs/) - Application Platform
 
 ## Authors
 
