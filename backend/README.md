@@ -32,7 +32,7 @@ To use it you will need to have node installed on your machine, as well as yarn,
 
 ### Installation
 
-Installing dependencies
+* Installing dependencies
 
 ```
 yarn
@@ -42,7 +42,8 @@ ou
 npm -i
 ```
 
-Running the project in development mode
+* Running the project in development mode
+
 First, you must have a database created in your little box, after that create a file called .env in the root of the project and put the access credentials to the database inside it following the model of the .env.example file, after this step run the following command 
 ```npx sequelize-cli db:migrate```, to create the tables in the database, the next step is optional to include some categories without needing to create them, run the following command ```npx sequelize-cli db:seed:all```, after this steps run the following command.
 
